@@ -20,5 +20,5 @@ from .views import slackview,home
 urlpatterns = [
     path('',home),
     path('admin/', admin.site.urls),
-    path('view/', slackview, name= "slackview")
+    path('api', slackview, name= "slackview")
 ]
