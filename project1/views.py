@@ -13,6 +13,11 @@ def slackview(request, slackname, track):
                 'current_day': current_date,
                 'utc_time': current_time,
                 'track' : track,
+                'github_file_url': 
+                "https://github.com/marveldo/Jsonreturn/blob/main/project1/views.py",
+                'github_repo_url': 
+                "https://github.com/marveldo/Jsonreturn",
+                "status_code" : 200
                 }
     return JsonResponse(showdict, safe= True)
 
