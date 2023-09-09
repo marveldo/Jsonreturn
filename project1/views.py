@@ -6,14 +6,13 @@ import datetime
 def home(request):
     return HttpResponse("welcome")
 
-def slackview(request, param1, param2):
+def slackview(request, slackname, track):
     current_date = datetime.date.today().strftime("%A")
     current_time = datetime.datetime.utcnow()
-    showdict = {'slack_name': param1 ,
+    showdict = {'slack_name': slackname,
                 'current_day': current_date,
                 'utc_time': current_time,
-                'track' : param2,
-                
+                'track' : track,
                 }
     return JsonResponse(showdict, safe= True)
 
