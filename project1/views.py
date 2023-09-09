@@ -9,7 +9,7 @@ def home(request):
 def slackview(request):
     current_date = datetime.date.today().strftime("%A")
     current_time = datetime.datetime.utcnow()
-    slackname = request.GET.get('slackname')
+    slackname = request.GET.get('slack_name')
     track = request.GET.get('track')
     showdict = {'slack_name': slackname,
                 'current_day': current_date,
