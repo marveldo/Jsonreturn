@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+mi5@xgtga36*ov*h71uh^xj-)9f87op=z_5&fz)gtqq)ot3ao'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://slacknameandtrack.onrender.com/']
 
 
 # Application definition
